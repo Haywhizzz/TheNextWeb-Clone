@@ -92,12 +92,16 @@ section > :nth-child(1) {
   background-position: center;
   z-index: 2;
   width: 70%;
-  height: 80%;
+  height: 35em;
   margin: 10px 10px;
+  box-sizing: border-box;
 }
 
 section > :nth-child(2) {
-  height: 80%;
+  width: 30%;
+  height: 35em;
+  margin: 10px 10px;
+  box-sizing: border-box;
 }
 
 .tnw-img {
@@ -118,27 +122,23 @@ section > :nth-child(2) {
 
 .second-background-img {
   background-image: url("./gradient-img.jpg");
-  width: 30vw;
-  height: 50%;
+  height: 49%;
   opacity: 1;
   z-index: 2;
   background-position: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 section {
   display: flex;
-  height: 35rem;
 }
 
 .third-background-img {
   background-image: url("./third-background-img.jpg");
-  width: 30vw;
-  height: 50%;
+  height: 49%;
   opacity: 1;
   z-index: 2;
   background-position: center;
+  margin-top: 2%;
 }
 
 .tnw-down {
@@ -160,10 +160,19 @@ section {
 .tnw-container {
   background-image: linear-gradient(to bottom right, red, black);
   margin-bottom: 0;
+  height: 30%;
 }
 
 .fas {
   padding-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.third-background-img div {
+  display: flex;
+}
+
+.second-background-img p, .third-background-img p {
+  margin-block-start: 0;
 }
