@@ -43,3 +43,21 @@ ul {
   margin-block-start: 1em;
   margin-left: 10px;
 }
+
+.flex-container i {
+  margin-block-start: 1em;
+  margin-right: 10px;
+}
+
+.flex-container button {
+  margin-left: 20px;
+  background-color: #0cc;
+  font-weight: 900;
+  color: white;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.flex-container button:hover {
+  background-color: #90C;
+}
