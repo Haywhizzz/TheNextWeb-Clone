@@ -88,12 +88,16 @@ ul {
 
 section > :nth-child(1) {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png") no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
-  opacity: 0.5;
   z-index: 2;
   width: 70%;
-  height: 35vh;
+  height: 80%;
+  margin: 10px 10px;
+}
+
+section > :nth-child(2) {
+  height: 80%;
 }
 
 .tnw-img {
@@ -107,29 +111,59 @@ section > :nth-child(1) {
 
 .tnw-red {
   width: 100%;
-  height: 100%;
+  height: 70%;
   background: linear-gradient(#ff6f6a, #f34646);
   opacity: 0.75;
 }
 
 .second-background-img {
   background-image: url("./gradient-img.jpg");
-  width: 100px;
-  height: 100px;
+  width: 30vw;
+  height: 50%;
   opacity: 1;
   z-index: 2;
   background-position: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 section {
   display: flex;
+  height: 35rem;
 }
 
 .third-background-img {
   background-image: url("./third-background-img.jpg");
-  width: 100px;
-  height: 100px;
+  width: 30vw;
+  height: 50%;
   opacity: 1;
   z-index: 2;
   background-position: center;
+}
+
+.tnw-down {
+  display: flex;
+  opacity: 1;
+}
+
+.tnw-insights {
+  font-size: 28px;
+  color: white;
+}
+
+.tnw-explanations {
+  font-size: 42px;
+  font-weight: 900;
+  color: white;
+}
+
+.tnw-container {
+  background-image: linear-gradient(to bottom right, red, black);
+  margin-bottom: 0;
+}
+
+.fas {
+  padding-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
