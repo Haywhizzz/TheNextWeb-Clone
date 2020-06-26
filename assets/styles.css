@@ -2,6 +2,10 @@ body {
   margin-top: 0;
 }
 
+.flex-ul-container-two {
+  color: #aaa;
+}
+
 .flex-ul-container ul {
   display: flex;
   padding-left: 5px;
@@ -9,6 +13,7 @@ body {
   padding-right: 10px;
   color: white;
   height: 20px;
+  color: #aaa;
 }
 
 nav > :nth-child(1) {
@@ -23,6 +28,12 @@ nav > :nth-child(1) {
 nav > :nth-child(2) {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+}
+
+nav > :nth-child(3) {
+  background-color: yellow;
+  height: 25px;
 }
 
 li > a {
@@ -37,11 +48,14 @@ ul {
 
 .flex-container {
   display: flex;
+  border-left: 1px solid black;
+  padding-left: 10px;
 }
 
 .flex-container a {
   margin-block-start: 1em;
   margin-left: 10px;
+  color: red;
 }
 
 .flex-container i {
@@ -54,10 +68,39 @@ ul {
   background-color: #0cc;
   font-weight: 900;
   color: white;
-  margin-top: 1em;
   cursor: pointer;
+  height: 80%;
+  border-radius: 5px;
+  border: none;
 }
 
 .flex-container button:hover {
   background-color: #90C;
 }
+
+.flex-ul-container-two a:hover {
+  color: black;
+}
+
+.flex-ul-container > ul > li > a:hover {
+  color: white;
+}
+
+section > :nth-child(1) {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png") no-repeat, linear-gradient(#e66465, #9198e5);
+  opacity: 0.5;
+  z-index: 2;
+  width: 75em;
+  height: 35vh;
+}
+
+.tnw-img {
+  background-image: url(./TNW.jpeg);
+  width: 50em;
+  height: 10rem;
+  opacity: 1;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+
