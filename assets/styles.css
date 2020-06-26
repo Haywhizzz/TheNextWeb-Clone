@@ -36,6 +36,11 @@ nav > :nth-child(3) {
   height: 25px;
 }
 
+nav > :nth-child(3) a {
+  text-decoration: none;
+  color: black;
+}
+
 li > a {
   margin-left: 20px;
 }
@@ -126,6 +131,9 @@ main > :nth-child(1) > :nth-child(2) {
   opacity: 1;
   z-index: 2;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 section {
@@ -139,6 +147,9 @@ section {
   z-index: 2;
   background-position: center;
   margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .tnw-down {
@@ -146,15 +157,21 @@ section {
   opacity: 1;
 }
 
-.tnw-insights {
-  font-size: 28px;
+.tnw-down p {
   color: white;
 }
 
-.tnw-explanations {
+.tnw-insights a {
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
+
+.tnw-explanations a {
   font-size: 42px;
   font-weight: 900;
   color: white;
+  text-decoration: none;
 }
 
 .tnw-container {
@@ -180,7 +197,29 @@ section {
 .first-grid-container {
   display: grid;
   grid-gap: 20px;
-  direction: rtl;
-  padding-bottom: 20px;
- 
+  grid-template-columns: repeat(auto-fill, 20%);
+  padding-right: 20%;
+  padding-left: 20%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.grid-img img {
+  width: 100%;
+  height: 100%;
+}
+
+main > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+main > :nth-child(2) > h2 {
+  padding-left: 24%;
+}
+
+.second-background-img *, .third-background-img * {
+  color: white;
+  text-decoration: none;
 }
