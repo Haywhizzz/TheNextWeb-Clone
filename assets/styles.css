@@ -239,7 +239,7 @@ main > :nth-child(2) > h2 {
 .non-flex-section {
   display: inline-block;
   padding-left: 24%;
-  padding-right: 20%;
+  padding-right: 15%;
   
 }
 
@@ -297,4 +297,12 @@ main > :nth-child(2) > h2 {
 .flex-div-h3 {
   border-right: 1px solid red;
   padding-right: 7px;
+}
+
+.small.background-img {
+  background-image: url(".assets/small-background-img.jpg");
+  background-position: center;
+  z-index: 2;
+
+
 }
