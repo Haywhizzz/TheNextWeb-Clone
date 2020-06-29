@@ -345,3 +345,7 @@ main > :nth-child(2) > h2 {
 .small-background-img ul li {
   border-bottom: 1px solid gray;
 }
+
+.last-grid-container {
+  display: grid;
+}
