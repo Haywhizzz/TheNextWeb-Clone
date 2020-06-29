@@ -375,12 +375,25 @@ footer {
 }
 
 .footer-icons {
-  display: flex;
-  justify-items: space-around;
+  display: block;
   color: white;
+  height: 60px;
+  padding-top: 30px;
+  text-align: center;
 }
   
 .footer-icons i {
+  box-sizing: border-box;
   background-color: grey;
   border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  padding-top: 20px;
+  margin-right: 15px;
+}
+
+.fas {
+  padding-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
