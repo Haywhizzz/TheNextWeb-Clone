@@ -372,6 +372,8 @@ main > :nth-child(2) > h2 {
 footer {
   background-color: black;
   height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-icons {
@@ -386,9 +388,9 @@ footer {
   box-sizing: border-box;
   background-color: grey;
   border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  padding-top: 20px;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
   margin-right: 15px;
 }
 
@@ -396,4 +398,33 @@ footer {
   padding-top: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footer-list a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-list li {
+  list-style: none;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+}
+
+footer p {
+  color: white;
+}
+
+footer :nth-child(3) {
+  justify-self: flex-end
 }
