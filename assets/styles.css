@@ -299,10 +299,10 @@ main > :nth-child(2) > h2 {
   padding-right: 7px;
 }
 
-.small.background-img {
-  background-image: url(".assets/small-background-img.jpg");
+.small-background-img {
+  background-image: url("./small-background-img.jpg");
   background-position: center;
   z-index: 2;
-
+  background-repeat: no-repeat;
 
 }
