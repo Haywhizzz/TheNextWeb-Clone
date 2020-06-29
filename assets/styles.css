@@ -304,5 +304,16 @@ main > :nth-child(2) > h2 {
   background-position: center;
   z-index: 2;
   background-repeat: no-repeat;
+  width: 20%;
 
+}
+
+.small-background-img p {
+  margin-top: 25px;
+}
+
+.small-background-img-flex {
+  padding-left: 24%;
+  padding-right: 15%;
+  display: flex;
 }
