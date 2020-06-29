@@ -45,7 +45,7 @@ li > a {
   margin-left: 20px;
 }
 
-ul {
+.flex-ul-container ul, .flex-ul-container-two ul {
   list-style: none;
   display: flex;
   padding-left: 0;
@@ -299,14 +299,28 @@ main > :nth-child(2) > h2 {
 }
 
 .small-background-img {
-  background-image: url("./small-background-img.jpg");
-  background-position: center;
-  z-index: 2;
-  background-repeat: no-repeat;
   width: 30%;
   background-position-y: 50px;
   margin-right: 25px;
+}
 
+.small-background-img > :nth-child(1) {
+  background-image: url("./small-background-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+.small-background-img > :nth-child(1) * {
+  z-index: 2;
+  opacity: 1;
+}
+
+.small-background-img > :nth-child(2) {
+  background-color: pink;
+  padding-left: 10px;
 }
 
 .small-background-img p {
@@ -324,3 +338,10 @@ main > :nth-child(2) > h2 {
   padding-right: 15%;
 }
 
+.small-background-img ul {
+  padding-left: 14px;
+}
+
+.small-background-img ul li {
+  border-bottom: 1px solid gray;
+}
