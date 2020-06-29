@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" initial-scale="1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles.css">
-    <script type="text/javascript" src="./prefixfree.js"></script>
+    <script src="./prefixfree.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <title>The Next Web</title>
@@ -58,7 +58,7 @@
         </div>
     </nav>
     <main>
-        <section>
+        <section class="first-section">
             <article>
                 <div class="tnw-red">
                     <a href="#">
@@ -70,14 +70,14 @@
                         <a href="#">Insights</a>
                     </div>
                     <div class="tnw-explanations">
-                        <a href="#">Dominos delivers pizza by drone to Dutch beach - but it was just a trial.</a>
+                        <a href="#"><h1>Dominos delivers pizza by drone to Dutch beach - but it was just a trial.</h1></a>
                     </div>
                     <div class="tnw-down">
                         <p>by <a>Matthew Beedham</a></p>
                         <i class="fas fa-clock"></i>
                         <p>48 minutes ago</p>
                         <i class="fas fa-share-alt"></i>
-                        <p>4</p>
+                        <h4>4</h4>
                     </div>
                 </div>
             </article>
@@ -85,9 +85,9 @@
                 <a href="#" class="second-background-img">
                     <p>TNW Couch Conference Explore What's Next for Your Industry </p>
                 </a>
-                <div href="#" class="third-background-img">
+                <div class="third-background-img">
                     <h3>TECH</h3>
-                    <h1>Why you shouldn’t overlook user testing methods in UX design</h1>
+                    <h2>Why you shouldn’t overlook user testing methods in UX design</h2>
                     <div>
                         <p>By <a>Jeff Brian</a></p>
                         <i class="fas fa-clock"></i>
@@ -155,7 +155,7 @@
             </div>
             <div class="flex-div">
                 <article>
-                    <img src="./assets/image.jpeg" alt="image-second" id="s-image">
+                    <img src="./assets/image.jpeg" alt="image-second" class="s-image">
                     <div class="spiff-background">
                         <h4>Spiff, Inc</h4>
                     </div>
@@ -177,7 +177,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="./assets/image.jpeg" alt="image-second" id="s-image">
+                    <img src="./assets/image.jpeg" alt="image-second" class="s-image">
                     <div class="spiff-background">
                         <h4>Spiff, Inc</h4>
                     </div>
@@ -199,7 +199,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="./assets/image.jpeg" alt="image-second" id="s-image">
+                    <img src="./assets/image.jpeg" alt="image-second" class="s-image">
                     <div class="spiff-background">
                         <h4>Spiff, Inc</h4>
                     </div>
@@ -221,7 +221,7 @@
                     </div>
                 </article>
                 <article>
-                    <img src="./assets/image.jpeg" alt="image-second" id="s-image">
+                    <img src="./assets/image.jpeg" alt="image-second" class="s-image">
                     <div class="spiff-background">
                         <h4>Spiff, Inc</h4>
                     </div>
@@ -384,100 +384,100 @@
             </div>
 
         </section>
-    </section>
-    <section class="non-flex-section2">
-        <div class="flex-div2">
-            <article class="small-background-img">
-                <div>
-                    <h2>Apps</h2>
-                    <p>MOST POPULAR</p>
-                    <h3>Facebook will label politicians' posts that violate its policies after all</h3>
-                    <p><small>Napier Lopez . 2 days ago</small></p>
+        </section>
+        <section class="non-flex-section2">
+            <div class="flex-div2">
+                <article class="small-background-img">
+                    <div>
+                        <h2>Apps</h2>
+                        <p>MOST POPULAR</p>
+                        <h3>Facebook will label politicians' posts that violate its policies after all</h3>
+                        <p><small>Napier Lopez . 2 days ago</small></p>
+                    </div>
+                    <div>
+                        <p>LATEST</p>
+                        <p>Facebook will warn you about sharing articles older than 3 months</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Facebook will warn you about sharing articles older than 3 months</li>
+                            <li>There's no native iPad Calculator app, and that won't change in iPadOS 14</li>
+                            <li>Big Sur is macOS 11 — RIP OS X, we hardly knew thee</li>
+                            <li>The next macOS will be called Big Sur — and it's ever-closer to iOS</li>
+                            <li>Apple takes the iPad to another level with iPadOS 14</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="small-background-img">
+                    <div>
+                        <h2>Gear</h2>
+                        <p>MOST POPULAR</p>
+                        <h3>Facebook will label politicians' posts that violate its policies after all</h3>
+                        <p><small>Napier Lopez . 2 days ago</small></p>
+                    </div>
+
+                    <div>
+                        <p>LATEST</p>
+                        <p>Facebook will warn you about sharing articles older than 3 months</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Facebook will warn you about sharing articles older than 3 months</li>
+                            <li>There's no native iPad Calculator app, and that won't change in iPadOS 14</li>
+                            <li>Big Sur is macOS 11 — RIP OS X, we hardly knew thee</li>
+                            <li>The next macOS will be called Big Sur — and it's ever-closer to iOS</li>
+                            <li>Apple takes the iPad to another level with iPadOS 14</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+        </section>
+        <section class="non-flex-section3">
+            <h2>Latest Deals </h2>
+            <article class="last-grid-container">
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
                 </div>
-                <div>
-                    <p>LATEST</p>
-                    <p>Facebook will warn you about sharing articles older than 3 months</p>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
                 </div>
-                <div>
-                    <ul>
-                        <li>Facebook will warn you about sharing articles older than 3 months</li>
-                        <li>There's no native iPad Calculator app, and that won't change in iPadOS 14</li>
-                        <li>Big Sur is macOS 11 — RIP OS X, we hardly knew thee</li>
-                        <li>The next macOS will be called Big Sur — and it's ever-closer to iOS</li>
-                        <li>Apple takes the iPad to another level with iPadOS 14</li>
-                    </ul>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
+                </div>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
+                </div>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
+                </div>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
+                </div>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
+                </div>
+                <div class=" last-grid-img">
+                    <img src="./assets/last-grid.jpg" alt="last-grid">
+                    <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
+                    <p>$499 $0</p>
                 </div>
             </article>
-            <article class="small-background-img">
-                <div>
-                    <h2>Gear</h2>
-                    <p>MOST POPULAR</p>
-                    <h3>Facebook will label politicians' posts that violate its policies after all</h3>
-                    <p><small>Napier Lopez . 2 days ago</small></p>
-                </div>
-
-                <div>
-                    <p>LATEST</p>
-                    <p>Facebook will warn you about sharing articles older than 3 months</p>
-                </div>
-                <div>
-                    <ul>
-                        <li>Facebook will warn you about sharing articles older than 3 months</li>
-                        <li>There's no native iPad Calculator app, and that won't change in iPadOS 14</li>
-                        <li>Big Sur is macOS 11 — RIP OS X, we hardly knew thee</li>
-                        <li>The next macOS will be called Big Sur — and it's ever-closer to iOS</li>
-                        <li>Apple takes the iPad to another level with iPadOS 14</li>
-                    </ul>
-                </div>
-            </article>
-        </div>
-
-    </section>
-    <section class="non-flex-section3">
-        <h2>Latest Deals </h2>
-        <article class="last-grid-container">
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-            <div class=" last-grid-img">
-                <img src="./assets/last-grid.jpg" alt="last-grid">
-                <h2>FREE: Leadership & Management Diploma 4-Week Course</h2>
-                <p>$499 $0</p>
-            </div>
-        </article>
-    </section>
+        </section>
     </main>
 </body>
 <footer>
@@ -500,7 +500,8 @@
         </ul>
     </div>
     <div>
-        <p> <img src="./assets/small-tnw.svg" alt=""> The Next Web © 2006–2020 The Next Web B.V. Made with ♥ in Amsterdam. Powered by StackPath</p>
+        <img src="./assets/small-tnw.svg" alt="#">
+        <p> The Next Web © 2006–2020 The Next Web B.V. Made with ♥ in Amsterdam. Powered by StackPath</p>
     </div>
 </footer>
 

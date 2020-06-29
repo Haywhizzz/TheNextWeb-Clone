@@ -2,6 +2,19 @@ body {
   margin-top: 0;
 }
 
+nav {
+  position: fixed;
+  z-index: 55;
+  width: 100%;
+  opacity: 55;
+  visibility: visible;
+  background-color: white;
+}
+
+.first-section {
+  padding-top: 150px;
+}
+
 .flex-ul-container-two {
   color: #aaa;
 }
@@ -16,7 +29,7 @@ body {
   color: #aaa;
 }
 
-nav > :nth-child(1) {
+nav> :nth-child(1) {
   display: flex;
   padding-left: 5px;
   justify-content: space-between;
@@ -25,27 +38,28 @@ nav > :nth-child(1) {
   background-color: black;
 }
 
-nav > :nth-child(2) {
+nav> :nth-child(2) {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
 
-nav > :nth-child(3) {
+nav> :nth-child(3) {
   background-color: yellow;
   height: 25px;
 }
 
-nav > :nth-child(3) a {
+nav> :nth-child(3) a {
   text-decoration: none;
   color: black;
 }
 
-li > a {
+li>a {
   margin-left: 20px;
 }
 
-.flex-ul-container ul, .flex-ul-container-two ul {
+.flex-ul-container ul,
+.flex-ul-container-two ul {
   list-style: none;
   display: flex;
   padding-left: 0;
@@ -77,6 +91,7 @@ li > a {
   height: 80%;
   border-radius: 5px;
   border: none;
+  margin-right: 20px;
 }
 
 .flex-container button:hover {
@@ -87,11 +102,11 @@ li > a {
   color: black;
 }
 
-.flex-ul-container > ul > li > a:hover {
+.flex-ul-container>ul>li>a:hover {
   color: white;
 }
 
-main > :nth-child(1) > :nth-child(1) {
+main> :nth-child(1)> :nth-child(1) {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png") no-repeat;
   background-size: auto;
   background-position: center;
@@ -102,9 +117,9 @@ main > :nth-child(1) > :nth-child(1) {
   box-sizing: border-box;
 }
 
-main > :nth-child(1) > :nth-child(2) {
+main> :nth-child(1)> :nth-child(2) {
   width: 30%;
-  height: 35em;
+  height: 37em;
   margin: 10px 10px;
   box-sizing: border-box;
 }
@@ -152,6 +167,11 @@ section {
   justify-content: flex-end;
 }
 
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .tnw-down {
   display: flex;
   opacity: 1;
@@ -159,6 +179,12 @@ section {
 
 .tnw-down p {
   color: white;
+}
+
+.tnw-down i {
+  padding-top: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .tnw-insights a {
@@ -177,7 +203,7 @@ section {
 .tnw-container {
   background-image: linear-gradient(to bottom right, red, black);
   margin-bottom: 0;
-  height: 30%;
+  height: 35%;
 }
 
 .fas {
@@ -190,7 +216,8 @@ section {
   display: flex;
 }
 
-.second-background-img p, .third-background-img p {
+.second-background-img p,
+.third-background-img p {
   margin-block-start: 0;
 }
 
@@ -209,17 +236,17 @@ section {
   height: 100%;
 }
 
-main > :nth-child(2) {
+main> :nth-child(2) {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
 }
 
-main > :nth-child(2) > h2 {
+main> :nth-child(2)>h2 {
   padding-left: 24%;
 }
 
-.second-background-img *, .third-background-img * {
+.second-background-img *,
+.third-background-img * {
   color: white;
   text-decoration: none;
 }
@@ -229,7 +256,7 @@ main > :nth-child(2) > h2 {
   justify-content: space-between;
 }
 
-#s-image {
+.s-image {
   height: 50px;
   width: 50px;
   position: relative;
@@ -246,7 +273,8 @@ main > :nth-child(2) > h2 {
   width: 50%;
 }
 
-.non-flex-section .spiff-background, .non-flex-section .venture-background {
+.non-flex-section .spiff-background,
+.non-flex-section .venture-background {
   padding-left: 22%;
   margin-right: 25px;
 }
@@ -254,6 +282,7 @@ main > :nth-child(2) > h2 {
 .spiff-background {
   background-color: red;
 }
+
 .venture-background {
   background-color: pink;
 }
@@ -284,7 +313,7 @@ main > :nth-child(2) > h2 {
   margin-right: 10px;
 }
 
-.flex-div > article {
+.flex-div>article {
   flex: 0 1 250px;
 }
 
@@ -304,7 +333,7 @@ main > :nth-child(2) > h2 {
   margin-right: 25px;
 }
 
-.small-background-img > :nth-child(1) {
+.small-background-img> :nth-child(1) {
   background-image: url("./small-background-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -313,12 +342,12 @@ main > :nth-child(2) > h2 {
   opacity: 0.6;
 }
 
-.small-background-img > :nth-child(1) * {
+.small-background-img> :nth-child(1) * {
   z-index: 2;
   opacity: 1;
 }
 
-.small-background-img > :nth-child(2) {
+.small-background-img> :nth-child(2) {
   background-color: pink;
   padding-left: 10px;
 }
@@ -365,7 +394,7 @@ main > :nth-child(2) > h2 {
   display: block;
 }
 
-.non-flex-section3 > h2 {
+.non-flex-section3>h2 {
   padding-left: 22%;
 }
 
@@ -374,6 +403,7 @@ footer {
   height: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer-icons {
@@ -383,7 +413,7 @@ footer {
   padding-top: 30px;
   text-align: center;
 }
-  
+
 .footer-icons i {
   box-sizing: border-box;
   background-color: grey;
@@ -406,6 +436,12 @@ footer {
   color: white;
 }
 
+.footer-list {
+  margin-left: 0;
+  padding-left: 0;
+  padding-inline-start: 0;
+}
+
 .footer-list a {
   margin: 10px;
   text-decoration: none;
@@ -419,12 +455,67 @@ footer {
 footer img {
   height: 50px;
   width: 50px;
+  margin-right: 15px;
 }
 
 footer p {
   color: white;
 }
 
-footer :nth-child(3) {
-  justify-self: flex-end
+footer> :nth-child(3) {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 1112px) {
+  nav .flex-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 765px) {
+
+  nav .flex-ul-container-two,
+  nav .flex-ul-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .first-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:700px) {
+  main> :nth-child(1)> :nth-child(2) {
+    width: 100%;
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width:700px) {
+  main> :nth-child(1)> :nth-child(1) {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .first-grid-container {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px) {
+
+  .flex-div2,
+  .last-grid-container,
+  .flex-div2 *,
+  .last-grid-container * {
+    display: block;
+    width: 100%;
+  }
 }
