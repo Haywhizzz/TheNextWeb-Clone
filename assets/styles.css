@@ -368,3 +368,19 @@ main > :nth-child(2) > h2 {
 .non-flex-section3 > h2 {
   padding-left: 22%;
 }
+
+footer {
+  background-color: black;
+  height: 300px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-items: space-around;
+  color: white;
+}
+  
+.footer-icons i {
+  background-color: grey;
+  border-radius: 50%;
+}
