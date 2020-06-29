@@ -72,7 +72,7 @@ li>a {
 }
 
 .flex-container a {
-  margin-block-start: 1em;
+
   margin-left: 10px;
   color: red;
 }
