@@ -240,7 +240,6 @@ main > :nth-child(2) > h2 {
   display: inline-block;
   padding-left: 24%;
   padding-right: 15%;
-  
 }
 
 .non-flex-section article {
@@ -304,7 +303,9 @@ main > :nth-child(2) > h2 {
   background-position: center;
   z-index: 2;
   background-repeat: no-repeat;
-  width: 20%;
+  width: 30%;
+  background-position-y: 50px;
+  margin-right: 25px;
 
 }
 
@@ -312,8 +313,14 @@ main > :nth-child(2) > h2 {
   margin-top: 25px;
 }
 
-.small-background-img-flex {
+.flex-div2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.non-flex-section2 {
+  display: inline-block;
   padding-left: 24%;
   padding-right: 15%;
-  display: flex;
 }
+
