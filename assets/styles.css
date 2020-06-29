@@ -223,3 +223,78 @@ main > :nth-child(2) > h2 {
   color: white;
   text-decoration: none;
 }
+
+.second-headings {
+  display: flex;
+  justify-content: space-between;
+}
+
+#s-image {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 75px;
+}
+
+.non-flex-section {
+  display: inline-block;
+  padding-left: 24%;
+  padding-right: 20%;
+  
+}
+
+.non-flex-section article {
+  width: 50%;
+}
+
+.non-flex-section .spiff-background, .non-flex-section .venture-background {
+  padding-left: 22%;
+  margin-right: 25px;
+}
+
+.spiff-background {
+  background-color: red;
+}
+.venture-background {
+  background-color: pink;
+}
+
+.spiff-background h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.venture-background p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.second-flex-div i {
+  margin-block-start: 1em;
+  margin-right: 10px;
+}
+
+.flex-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-div h3 {
+  margin-right: 10px;
+}
+
+.flex-div > article {
+  flex: 0 1 250px;
+}
+
+.second-flex-div {
+  display: flex;
+  padding-left: 4%;
+}
+
+.flex-div-h3 {
+  border-right: 1px solid red;
+  padding-right: 7px;
+}
