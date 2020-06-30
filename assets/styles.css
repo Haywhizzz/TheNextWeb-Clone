@@ -1,12 +1,7 @@
 body {
-  margin-top: 0;
+  margin: 0;
   width: 100%;
   font-family: Shentox, sans-serif;
-  max-width: 100%;
-}
-
-main {
-  width: 100%;
 }
 
 nav {
@@ -16,10 +11,13 @@ nav {
   opacity: 55;
   visibility: visible;
   background-color: white;
+  top: 0;
+  box-sizing: border-box;
 }
 
 .first-section {
-  padding-top: 150px;
+  margin-top: 150px;
+  flex-wrap: wrap;
 }
 
 .flex-ul-container-two {
@@ -65,13 +63,13 @@ li > a {
 }
 
 .tnw-insights a {
-  font-size: 28px;
+  font-size: 1em;
   color: white;
   text-decoration: none;
 }
 
 .tnw-explanations a {
-  font-size: 42px;
+  font-size: 1.5em;
   font-weight: 900;
   color: white;
   text-decoration: none;
@@ -171,17 +169,18 @@ main > :nth-child(1) > :nth-child(1) {
   height: 35em;
   margin: 10px 10px;
   box-sizing: border-box;
+  flex: 2;
 }
 
 main > :nth-child(1) > :nth-child(2) {
   height: 37em;
   margin: 10px 10px;
   box-sizing: border-box;
+  flex: 1;
 }
 
 .tnw-img {
   background-image: url("./logo.png");
-  width: 50em;
   height: 10rem;
   opacity: 0.4;
   z-index: -1;
@@ -495,7 +494,7 @@ footer {
 }
 
 .hamburger {
-  visibility: hidden;
+  display: none;
   position: absolute;
   right: 10px;
   top: 5px;
@@ -508,6 +507,7 @@ footer {
 
   .first-section {
     flex-wrap: wrap;
+    padding-top: 20px;
   }
 
   main > :nth-child(1) > :nth-child(2),
@@ -524,7 +524,7 @@ footer {
   }
 
   .hamburger {
-    visibility: visible;
+    display: block;
   }
 
   .first-grid-container,
@@ -549,6 +549,10 @@ footer {
     width: 100%;
   }
 
+  .first-section > article {
+    min-width: 300px;
+  }
+
   .non-flex-section,
   .non-flex-section2 {
     padding: 0;
@@ -561,25 +565,43 @@ footer {
 
   .small-background-img {
     width: 100%;
+    margin-right: 0;
+  }
+
+  .second-headings {
+    display: block;
+  }
+
+  nav :nth-child(3) {
+    height: 35px;
+  }
+
+  .tnw-img {
+    width: 50%;
+    background-size: contain;
+  }
+
+  .fas {
+    padding-top: 0;
+  }
+
+  h3, p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-left: 5px;
+  }
+
+  .grid-img {
+    margin-bottom: 10px;
+  }
+
+  .non-flex-section .spiff-background, .non-flex-section .venture-background {
+    margin-right: 0;
+  }
+
+  .last-grid-img h2 {
+    font-size: 1em;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .first-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
-@media screen and (max-width: 700px) {
-  main > :nth-child(1) > :nth-child(2) {
-    width: 100%;
-    height: 35rem;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  main > :nth-child(1) > :nth-child(1) {
-    width: 100%;
-  }
-}
