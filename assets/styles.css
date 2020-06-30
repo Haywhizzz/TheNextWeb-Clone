@@ -167,12 +167,14 @@ main > :nth-child(1) > :nth-child(2) {
 }
 
 .tnw-img {
-  background-image: url("./TNW.jpeg");
+  background-image: url("./logo.png");
   width: 50em;
   height: 10rem;
-  opacity: 1;
-  z-index: 2;
+  opacity: 0.4;
+  z-index: -1;
   background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: left;
 }
 
 .tnw-red {
@@ -275,6 +277,7 @@ footer img {
 
 main > :nth-child(2) > h2 {
   padding-left: 24%;
+  color: red;
 }
 
 .second-background-img *,
@@ -286,6 +289,7 @@ main > :nth-child(2) > h2 {
 .second-headings {
   display: flex;
   justify-content: space-between;
+  color: red;
 }
 
 .s-image {
@@ -455,6 +459,11 @@ footer {
   margin-left: 0;
   padding-left: 0;
   padding-inline-start: 0;
+}
+
+.second-headings a {
+  text-decoration: none;
+  color: red;
 }
 
 @media screen and (max-width: 1112px) {
