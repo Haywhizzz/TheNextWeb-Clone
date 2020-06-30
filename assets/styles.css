@@ -135,7 +135,7 @@ footer > :nth-child(3) {
 }
 
 .small-background-img > :nth-child(2) {
-  background-color: pink;
+  background-color: #ffece7;
   padding-left: 10px;
 }
 
@@ -314,7 +314,7 @@ main > :nth-child(2) > h2 {
 }
 
 .venture-background {
-  background-color: pink;
+  background-color: #ffece7;
 }
 
 .non-flex-section .spiff-background,
@@ -340,6 +340,10 @@ main > :nth-child(2) > h2 {
   margin-right: 10px;
 }
 
+.p-tag {
+  border-top: 1px solid pink;
+}
+
 .flex-div {
   display: flex;
   flex-wrap: wrap;
@@ -351,6 +355,7 @@ main > :nth-child(2) > h2 {
 
 .flex-div > article {
   flex: 0 1 250px;
+  
 }
 
 .second-flex-div {
