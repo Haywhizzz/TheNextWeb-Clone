@@ -1,5 +1,12 @@
 body {
   margin-top: 0;
+  width: 100%;
+  font-family: Shentox, sans-serif;
+  max-width: 100%;
+}
+
+main {
+  width: 100%;
 }
 
 nav {
@@ -76,6 +83,11 @@ li > a {
   color: white;
 }
 
+.second-headings a {
+  text-decoration: none;
+  color: red;
+}
+
 nav > :nth-child(3) a {
   text-decoration: none;
   color: black;
@@ -132,15 +144,18 @@ footer > :nth-child(3) {
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
+  background-color: black;
 }
 
 .small-background-img > :nth-child(2) {
   background-color: #ffece7;
   padding-left: 10px;
+  color: red;
+  font-weight: 800;
 }
 
 .small-background-img > :nth-child(1) {
-  background-image: url("./small-background-img.jpg");
+  background-image: url("./TikTok-Court-796x417.jpg");
   background-position: center;
   background-repeat: no-repeat;
   color: white;
@@ -273,6 +288,7 @@ footer img {
 
 .non-flex-section3 > h2 {
   padding-left: 22%;
+  color: red;
 }
 
 main > :nth-child(2) > h2 {
@@ -355,7 +371,6 @@ main > :nth-child(2) > h2 {
 
 .flex-div > article {
   flex: 0 1 250px;
-  
 }
 
 .second-flex-div {
@@ -404,6 +419,12 @@ main > :nth-child(2) > h2 {
 
 .small-background-img ul li {
   border-bottom: 1px solid gray;
+  color: #aaa;
+}
+
+.small-background-img ul li:hover {
+  color: black;
+  cursor: pointer;
 }
 
 .last-grid-container {
@@ -426,7 +447,7 @@ main > :nth-child(2) > h2 {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(29, 29, 29);
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -466,9 +487,24 @@ footer {
   padding-inline-start: 0;
 }
 
-.second-headings a {
-  text-decoration: none;
-  color: red;
+.omited-div {
+  display: flex;
+}
+
+.omitted-p {
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 17px;
+}
+
+.hamburger {
+  visibility: hidden;
+  position: absolute;
+  right: 10px;
+  top: 5px;
 }
 
 @media screen and (max-width: 1112px) {
@@ -479,8 +515,26 @@ footer {
 
 @media screen and (max-width: 765px) {
   nav .flex-ul-container-two,
-  nav .flex-ul-container {
-    display: none;
+  nav .flex-ul-container,
+  nav > :nth-child(1) {
+    visibility: hidden;
+  }
+
+  .hamburger {
+    visibility: visible;
+  }
+
+  .first-section,
+  .non-flex-section2,
+  .non-flex-section3,
+  .non-flex-section,
+  footer,
+  .first-grid-container,
+  .last-grid-container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
   }
 }
 
@@ -500,23 +554,6 @@ footer {
 
 @media screen and (max-width: 700px) {
   main > :nth-child(1) > :nth-child(1) {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .first-grid-container {
-    display: block;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .flex-div2,
-  .last-grid-container,
-  .flex-div2 *,
-  .last-grid-container * {
-    display: block;
     width: 100%;
   }
 }
