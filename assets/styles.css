@@ -530,11 +530,13 @@ footer {
   .non-flex-section,
   footer,
   .first-grid-container,
-  .last-grid-container {
+  .last-grid-container,
+  main {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     display: block;
+    min-width: fit-content;
   }
 }
 
