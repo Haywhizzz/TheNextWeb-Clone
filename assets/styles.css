@@ -168,14 +168,12 @@ main > :nth-child(1) > :nth-child(1) {
   background-size: auto;
   background-position: center;
   z-index: 2;
-  width: 70%;
   height: 35em;
   margin: 10px 10px;
   box-sizing: border-box;
 }
 
 main > :nth-child(1) > :nth-child(2) {
-  width: 30%;
   height: 37em;
   margin: 10px 10px;
   box-sizing: border-box;
@@ -268,7 +266,7 @@ footer p {
 .first-grid-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, 20%);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
   padding-right: 20%;
   padding-left: 20%;
   box-sizing: border-box;
@@ -317,12 +315,8 @@ main > :nth-child(2) > h2 {
 
 .non-flex-section {
   display: inline-block;
-  padding-left: 24%;
+  padding-left: 20%;
   padding-right: 15%;
-}
-
-.non-flex-section article {
-  width: 50%;
 }
 
 .spiff-background {
@@ -370,7 +364,7 @@ main > :nth-child(2) > h2 {
 }
 
 .flex-div > article {
-  flex: 0 1 250px;
+  flex: 1 1 250px;
 }
 
 .second-flex-div {
@@ -405,7 +399,7 @@ main > :nth-child(2) > h2 {
 
 .non-flex-section2 {
   display: inline-block;
-  padding-left: 24%;
+  padding-left: 20%;
   padding-right: 15%;
 }
 
@@ -511,6 +505,15 @@ footer {
   nav .flex-container {
     display: none;
   }
+
+  .first-section {
+    flex-wrap: wrap;
+  }
+
+  main > :nth-child(1) > :nth-child(2),
+  main > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 765px) {
@@ -524,19 +527,40 @@ footer {
     visibility: visible;
   }
 
-  .first-section,
-  .non-flex-section2,
-  .non-flex-section3,
-  .non-flex-section,
-  footer,
   .first-grid-container,
-  .last-grid-container,
-  main {
+  .last-grid-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .grid-img,
+  .last-grid-img {
+    display: flex;
+  }
+
+  .grid-img img,
+  .last-grid-img img {
+    width: 75px;
+    height: 80px;
+  }
+
+  .flex-div > article {
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: block;
-    min-width: fit-content;
+  }
+
+  .non-flex-section,
+  .non-flex-section2 {
+    padding: 0;
+  }
+
+  .flex-div2 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .small-background-img {
+    width: 100%;
   }
 }
 
