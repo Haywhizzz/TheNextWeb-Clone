@@ -1,7 +1,9 @@
 body {
   margin: 0;
+  padding: 5px;
   width: 100%;
   font-family: Shentox, sans-serif;
+  box-sizing: border-box;
 }
 
 nav {
@@ -235,6 +237,7 @@ h1 {
 
 footer p {
   color: white;
+  font-size: 0.8em;
 }
 
 .tnw-down p {
@@ -408,6 +411,7 @@ main > :nth-child(2) > h2 {
 
 .footer-list li {
   list-style: none;
+  font-size: 0.8em;
 }
 
 .small-background-img ul li {
@@ -471,13 +475,13 @@ footer {
   margin-right: 10px;
 }
 
-.footer-list {
+.footer-list ul {
   display: flex;
   justify-content: center;
   color: white;
   margin-left: 0;
   padding-left: 0;
-  padding-inline-start: 0;
+  width: 100%;
 }
 
 .omited-div {
@@ -577,7 +581,6 @@ footer {
   }
 
   .tnw-img {
-    width: 50%;
     background-size: contain;
   }
 
@@ -600,6 +603,10 @@ footer {
   }
 
   .last-grid-img h2 {
+    font-size: 1em;
+  }
+
+  .tnw-explanations h1 {
     font-size: 1em;
   }
 }
