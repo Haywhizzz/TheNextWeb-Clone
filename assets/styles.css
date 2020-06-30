@@ -504,23 +504,7 @@ footer {
   top: 5px;
 }
 
-@media screen and (max-width: 1112px) {
-  nav .flex-container {
-    display: none;
-  }
-
-  .first-section {
-    flex-wrap: wrap;
-    padding-top: 20px;
-  }
-
-  main > :nth-child(1) > :nth-child(2),
-  main > :nth-child(1) > :nth-child(1) {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1025px) {
   nav .flex-ul-container-two,
   nav .flex-ul-container,
   nav > :nth-child(1) {
