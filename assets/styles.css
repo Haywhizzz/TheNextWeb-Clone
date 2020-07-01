@@ -533,6 +533,10 @@ footer {
     height: 80px;
   }
 
+  .first-section {
+    margin-top: 100px;
+  }
+
   .flex-div > article {
     width: 100%;
   }
@@ -592,6 +596,11 @@ footer {
 
   .tnw-explanations h1 {
     font-size: 1em;
+  }
+
+  nav :nth-child(2) {
+    position: absolute;
+    display: none;
   }
 }
 
