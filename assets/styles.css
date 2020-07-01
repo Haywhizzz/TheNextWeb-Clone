@@ -230,11 +230,6 @@ section {
   justify-content: flex-end;
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .tnw-down {
   display: flex;
   opacity: 1;
@@ -270,10 +265,11 @@ footer p {
   margin-block-start: 0;
 }
 
-.first-grid-container {
+.first-grid-container,
+.last-grid-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
   max-width: 1192px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -313,8 +309,8 @@ main > :nth-child(2) > h2 {
 
 .second-headings {
   display: flex;
-  justify-content: space-between;
   color: red;
+  justify-content: center;
 }
 
 .s-image {
@@ -325,9 +321,7 @@ main > :nth-child(2) > h2 {
 }
 
 .non-flex-section {
-  display: inline-block;
-  padding-left: 20%;
-  padding-right: 15%;
+  display: block;
 }
 
 .spiff-background {
@@ -368,6 +362,7 @@ main > :nth-child(2) > h2 {
 .flex-div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .flex-div h3 {
@@ -375,7 +370,8 @@ main > :nth-child(2) > h2 {
 }
 
 .flex-div > article {
-  flex: 1 1 250px;
+  flex: 1;
+  max-width: 250px;
 }
 
 .second-flex-div {
@@ -389,7 +385,7 @@ main > :nth-child(2) > h2 {
 }
 
 .small-background-img {
-  flex: 1;
+  width: 25%;
   background-position-y: 50px;
   margin-right: 25px;
 }
@@ -406,12 +402,12 @@ main > :nth-child(2) > h2 {
 .flex-div2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .non-flex-section2 {
-  display: inline-block;
-  padding-left: 20%;
-  padding-right: 15%;
+  display: block;
 }
 
 .small-background-img ul {
@@ -430,16 +426,6 @@ main > :nth-child(2) > h2 {
 .small-background-img ul li:hover {
   color: black;
   cursor: pointer;
-}
-
-.last-grid-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
-  max-width: 1192px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  justify-content: center;
 }
 
 .last-grid-img img {
@@ -521,7 +507,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 805px) {
+@media screen and (max-width: 770px) {
   nav {
     background-image: url(./logo.png);
     background-size: 20% 70px;
@@ -534,6 +520,19 @@ footer {
   nav .flex-ul-container,
   nav > :nth-child(1) {
     visibility: hidden;
+  }
+
+  nav :nth-child(3) {
+    height: 35px;
+  }
+
+  nav :nth-child(2) {
+    position: absolute;
+    display: none;
+  }
+
+  main > :nth-child(1) > :nth-child(1) {
+    height: 350px;
   }
 
   .hamburger {
@@ -562,10 +561,12 @@ footer {
 
   .first-section {
     margin-top: 100px;
+    display: block;
   }
 
   .flex-div > article {
     width: 100%;
+    max-width: 100%;
   }
 
   .first-section > article {
@@ -587,10 +588,6 @@ footer {
 
   .second-headings {
     display: block;
-  }
-
-  nav :nth-child(3) {
-    height: 35px;
   }
 
   .fas {
@@ -621,11 +618,6 @@ footer {
 
   .tnw-explanations h1 {
     font-size: 1em;
-  }
-
-  nav :nth-child(2) {
-    position: absolute;
-    display: none;
   }
 
   .tnw-img {
@@ -664,7 +656,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 806px) and (max-width: 1025px) {
+@media screen and (min-width: 771px) and (max-width: 1025px) {
   nav {
     background-image: url(./logo.png);
     background-size: 20% 100px;
@@ -688,9 +680,25 @@ footer {
     padding-right: 5%;
   }
 
-  .first-grid-container {
+  .first-grid-container,
+  .last-grid-container {
     padding-left: 5%;
     padding-right: 5%;
     grid-template-columns: repeat(auto-fill, minmax(175px, 225px));
+  }
+
+  .flex-div > :nth-child(4) {
+    display: none;
+  }
+
+  .tnw-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 807px) {
+  .last-grid-container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
