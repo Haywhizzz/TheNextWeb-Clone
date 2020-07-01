@@ -411,7 +411,6 @@ main > :nth-child(2) > h2 {
 
 .footer-list li {
   list-style: none;
-  font-size: 0.8em;
 }
 
 .small-background-img ul li {
@@ -482,6 +481,7 @@ footer {
   margin-left: 0;
   padding-left: 0;
   width: 100%;
+  font-size: 0.7em;
 }
 
 .omited-div {
