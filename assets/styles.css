@@ -507,7 +507,7 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
   nav {
     background-image: url(./logo.png);
     background-size: 20% 70px;
@@ -656,7 +656,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 771px) and (max-width: 1025px) {
+@media screen and (min-width: 768px) and (max-width: 1025px) {
   nav {
     background-image: url(./logo.png);
     background-size: 20% 100px;
@@ -676,14 +676,8 @@ footer {
     flex: unset;
   }
 
-  .non-flex-section2 {
-    padding-right: 5%;
-  }
-
   .first-grid-container,
   .last-grid-container {
-    padding-left: 5%;
-    padding-right: 5%;
     grid-template-columns: repeat(auto-fill, minmax(175px, 225px));
   }
 
@@ -696,7 +690,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 770px) and (max-width: 807px) {
+@media screen and (min-width: 768px) and (max-width: 807px) {
   .last-grid-container {
     padding-left: 0;
     padding-right: 0;
