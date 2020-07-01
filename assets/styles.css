@@ -296,12 +296,12 @@ footer img {
   color: red;
 }
 
-main > :nth-child(2) > h2 {
-  padding-left: 24%;
+.small-background-img h2 {
   color: red;
 }
 
-.small-background-img h2 {
+main > :nth-child(2) > h2 {
+  padding-left: 24%;
   color: red;
 }
 
@@ -664,7 +664,7 @@ footer {
   }
 }
 
-@media screen and (min-width:806px) and (max-width: 1025px) {
+@media screen and (min-width: 806px) and (max-width: 1025px) {
   nav {
     background-image: url(./logo.png);
     background-size: 20% 100px;
@@ -691,6 +691,6 @@ footer {
   .first-grid-container {
     padding-left: 5%;
     padding-right: 5%;
-    grid-template-columns: repeat(auto-fill, minmax(175px, 225px) );
+    grid-template-columns: repeat(auto-fill, minmax(175px, 225px));
   }
 }
