@@ -42,12 +42,14 @@ nav > :nth-child(1) {
   padding-right: 10px;
   color: white;
   background-color: black;
+  font-size: 0.85em;
 }
 
 nav > :nth-child(2) {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  font-size: 0.92em;
 }
 
 nav > :nth-child(3) {
@@ -157,7 +159,9 @@ footer > :nth-child(3) {
 .small-background-img > :nth-child(1) {
   background-image: url("./TikTok-Court-796x417.jpg");
   background-position: center;
+  background-position-y: 30px;
   background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   z-index: 1;
   opacity: 0.6;
@@ -270,8 +274,8 @@ footer p {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
-  padding-right: 20%;
-  padding-left: 20%;
+  max-width: 1192px;
+  margin: 0 auto;
   box-sizing: border-box;
   justify-content: center;
 }
@@ -288,12 +292,16 @@ footer img {
 }
 
 .non-flex-section3 > h2 {
-  padding-left: 22%;
+  padding-left: 27%;
   color: red;
 }
 
 main > :nth-child(2) > h2 {
   padding-left: 24%;
+  color: red;
+}
+
+.small-background-img h2 {
   color: red;
 }
 
@@ -381,7 +389,7 @@ main > :nth-child(2) > h2 {
 }
 
 .small-background-img {
-  width: 30%;
+  flex: 1;
   background-position-y: 50px;
   margin-right: 25px;
 }
@@ -426,11 +434,11 @@ main > :nth-child(2) > h2 {
 
 .last-grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20%, 250px));
-  box-sizing: border-box;
   grid-gap: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
+  max-width: 1192px;
+  margin: 0 auto;
+  box-sizing: border-box;
   justify-content: center;
 }
 
@@ -503,9 +511,25 @@ footer {
   position: absolute;
   right: 10px;
   top: 5px;
+  color: red;
 }
 
-@media screen and (max-width: 1025px) {
+.search-button {
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  display: none;
+}
+
+@media screen and (max-width: 805px) {
+  nav {
+    background-image: url(./logo.png);
+    background-size: 20% 70px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-y: top;
+  }
+
   nav .flex-ul-container-two,
   nav .flex-ul-container,
   nav > :nth-child(1) {
@@ -526,6 +550,8 @@ footer {
   .grid-img,
   .last-grid-img {
     display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
   }
 
   .grid-img img,
@@ -552,13 +578,11 @@ footer {
   }
 
   .flex-div2 {
-    flex-direction: column;
     width: 100%;
   }
 
   .small-background-img {
     width: 100%;
-    margin-right: 0;
   }
 
   .second-headings {
@@ -590,7 +614,9 @@ footer {
   }
 
   .last-grid-img h2 {
-    font-size: 1em;
+    font-size: 1.1em;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .tnw-explanations h1 {
@@ -603,16 +629,7 @@ footer {
   }
 
   .tnw-img {
-    position: relative;
-    top: 0;
-    width: 75px;
-    height: 70px;
-    background-size: cover;
-    background-position: center;
-    z-index: 150;
-    display: block;
-    opacity: 1;
-    background-position-x: right;
+    display: none;
   }
 
   .second-headings h1 {
@@ -622,5 +639,58 @@ footer {
 
   .flex-div * {
     font-size: 1em;
+  }
+
+  .search-button {
+    display: block;
+  }
+
+  .flex-div {
+    flex-direction: column;
+  }
+
+  .flex-div2 .small-background-img {
+    width: 100%;
+    flex: unset;
+    margin-right: 0;
+  }
+
+  .non-flex-section2 {
+    padding-right: 0;
+  }
+
+  .non-flex-section3 h2 {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width:806px) and (max-width: 1025px) {
+  nav {
+    background-image: url(./logo.png);
+    background-size: 20% 100px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-position-y: top;
+  }
+
+  nav > :nth-child(1),
+  nav > :nth-child(2) {
+    margin-left: 20%;
+    width: fit-content;
+  }
+
+  .flex-div2 .small-background-img {
+    width: 40%;
+    flex: unset;
+  }
+
+  .non-flex-section2 {
+    padding-right: 5%;
+  }
+
+  .first-grid-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 225px) );
   }
 }
