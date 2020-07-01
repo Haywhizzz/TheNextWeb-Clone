@@ -573,7 +573,8 @@ footer {
     padding-top: 0;
   }
 
-  h3, p {
+  h3,
+  p {
     margin-block-start: 0;
     margin-block-end: 0;
     margin-left: 5px;
@@ -583,7 +584,8 @@ footer {
     margin-bottom: 10px;
   }
 
-  .non-flex-section .spiff-background, .non-flex-section .venture-background {
+  .non-flex-section .spiff-background,
+  .non-flex-section .venture-background {
     margin-right: 0;
   }
 
@@ -622,5 +624,3 @@ footer {
     font-size: 1em;
   }
 }
-
-
