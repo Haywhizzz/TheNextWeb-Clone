@@ -189,6 +189,7 @@ main > :nth-child(1) > :nth-child(2) {
   background-repeat: no-repeat;
   background-position: center;
   background-position-x: left;
+  background-size: contain;
 }
 
 .tnw-red {
@@ -568,10 +569,6 @@ footer {
     height: 35px;
   }
 
-  .tnw-img {
-    background-size: contain;
-  }
-
   .fas {
     padding-top: 0;
   }
@@ -601,6 +598,28 @@ footer {
   nav :nth-child(2) {
     position: absolute;
     display: none;
+  }
+
+  .tnw-img {
+    position: relative;
+    top: 0;
+    width: 75px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    z-index: 150;
+    display: block;
+    opacity: 1;
+    background-position-x: right;
+  }
+
+  .second-headings h1 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+
+  .flex-div * {
+    font-size: 1em;
   }
 }
 
