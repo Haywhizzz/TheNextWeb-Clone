@@ -25,6 +25,7 @@ nav {
 .flex-ul-container-two {
   color: #aaa;
   display: inline-block;
+  font-size: 1.2em;
 }
 
 .flex-ul-container ul {
@@ -293,6 +294,8 @@ footer p {
   grid-column-start: 1;
   grid-column-end: 5;
   color: red;
+  justify-content: space-between;
+  margin-top: 25px;
 }
 
 footer img {
@@ -304,6 +307,16 @@ footer img {
 .grid-img img {
   width: 100%;
   height: 100%;
+}
+
+.grid-img  a {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+.grid-img p {
+  font-size: 0.8em;
+  color: #aaa;
 }
 
 .non-flex-section3 > h2 {
@@ -325,6 +338,7 @@ footer img {
 
 .second-headings h1 {
   margin-right: 15px;
+  font-size: 1.3em;
 }
 
 .s-image {
@@ -371,6 +385,7 @@ footer img {
 
 .p-tag {
   border-top: 1px solid pink;
+  font-size: 0.7em;
 }
 
 .flex {
@@ -391,7 +406,10 @@ footer img {
   margin-right: 10px;
 }
 
-
+.flex h3 {
+  font-size: 0.9em;
+  
+}
 
 .second-flex-div {
   display: flex;
@@ -399,7 +417,6 @@ footer img {
 }
 
 .flex-div-h3 {
-  border-right: 1px solid red;
   padding-right: 7px;
 }
 
@@ -525,6 +542,7 @@ footer {
 
 .last-grid-img h2 {
   color: black;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 767px) {
