@@ -80,6 +80,12 @@ li > a {
   text-decoration: none;
 }
 
+.footer-end img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
 .footer-list a {
   margin: 10px;
   text-decoration: none;
@@ -144,11 +150,6 @@ nav > :nth-child(3) a {
 
 .flex-ul-container > ul > li > a:hover {
   color: white;
-}
-
-main > :nth-child(2) {
-  display: flex;
-  flex-direction: column;
 }
 
 footer > :nth-child(3) {
@@ -223,7 +224,7 @@ main > :nth-child(1) > :nth-child(2) {
   justify-content: flex-end;
 }
 
-section {
+.first-section {
   display: flex;
 }
 
@@ -275,15 +276,28 @@ footer p {
   margin-block-start: 0;
 }
 
-.first-grid-container,
-.last-grid-container {
+.four-grid-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
-  max-width: 1192px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 70%;
   margin: 0 auto;
   box-sizing: border-box;
   justify-content: center;
+}
+
+.four-grid-container h2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  color: red;
+}
+
+.second-headings {
+  display: flex;
+  color: red;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  color: red;
 }
 
 footer img {
@@ -306,26 +320,21 @@ footer img {
   color: red;
 }
 
-main > :nth-child(2) > h2 {
-  padding-left: 24%;
-  color: red;
-}
-
 .second-background-img *,
 .third-background-img * {
   color: white;
   text-decoration: none;
 }
 
-.second-headings {
-  display: flex;
-  color: red;
-  justify-content: center;
+
+
+.second-headings h1 {
+  margin-right: 15px;
 }
 
 .s-image {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   position: relative;
   top: 75px;
 }
@@ -369,9 +378,17 @@ main > :nth-child(2) > h2 {
   border-top: 1px solid pink;
 }
 
-.flex-div {
+.flex {
   display: flex;
-  flex-wrap: wrap;
+}
+
+.flex-div {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 225px));
+  max-width: 1192px;
+  margin: 0 auto;
+  box-sizing: border-box;
   justify-content: center;
 }
 
@@ -379,10 +396,7 @@ main > :nth-child(2) > h2 {
   margin-right: 10px;
 }
 
-.flex-div > article {
-  flex: 1;
-  max-width: 250px;
-}
+
 
 .second-flex-div {
   display: flex;
@@ -395,9 +409,7 @@ main > :nth-child(2) > h2 {
 }
 
 .small-background-img {
-  width: 25%;
   background-position-y: 50px;
-  margin-right: 25px;
 }
 
 .small-background-img > :nth-child(1) * {
@@ -410,12 +422,13 @@ main > :nth-child(2) > h2 {
 }
 
 .flex-div2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 70%;
   margin: 0 auto;
-  padding-left: 17%;
-  padding-right: 17%;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 .non-flex-section2 {
@@ -547,13 +560,6 @@ footer {
     display: block;
   }
 
-  .first-grid-container,
-  .last-grid-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
   .grid-img,
   .last-grid-img {
     display: flex;
@@ -572,18 +578,8 @@ footer {
     display: block;
   }
 
-  .flex-div > article {
-    width: 100%;
-    max-width: 100%;
-  }
-
   .first-section > article {
     min-width: 300px;
-  }
-
-  .non-flex-section,
-  .non-flex-section2 {
-    padding: 0;
   }
 
   .flex-div2 {
@@ -664,6 +660,13 @@ footer {
   .non-flex-section3 h2 {
     padding-left: 0;
   }
+
+  .four-grid-container {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1025px) {
@@ -681,18 +684,34 @@ footer {
   }
 
   .flex-div2 {
-    padding-right: 0;
-    padding-left: 0;
+    max-width: 100%;
+    margin: 0;
   }
 
   .flex-div2 .small-background-img {
-    width: 40%;
     flex: unset;
   }
 
-  .first-grid-container,
-  .last-grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(175px, 225px));
+  .four-grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  .four-grid-container h2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .grid-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .four-grid-container .grid-img img {
+    height: 60%;
   }
 
   .flex-div > :nth-child(4) {
@@ -715,11 +734,14 @@ footer {
   .flex-container a {
     font-size: 0.5em;
   }
-}
 
-@media screen and (min-width: 768px) and (max-width: 807px) {
-  .last-grid-container {
-    padding-left: 0;
-    padding-right: 0;
+  .second-headings {
+    grid-column-end: 4;
+  }
+
+  #none {
+    display: none;
   }
 }
+
+
