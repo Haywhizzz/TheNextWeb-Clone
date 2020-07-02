@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 5px;
   width: 100%;
-  font-family: Shentox, sans-serif;
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -24,6 +24,7 @@ nav {
 
 .flex-ul-container-two {
   color: #aaa;
+  display: inline-block;
 }
 
 .flex-ul-container ul {
@@ -102,6 +103,14 @@ nav > :nth-child(3) a {
   padding-left: 0;
 }
 
+.footer-list li {
+  list-style: none;
+}
+
+.flex-ul-container-two ul li {
+  font-size: 0.75em;
+}
+
 .flex-container {
   display: flex;
   border-left: 1px solid black;
@@ -168,7 +177,7 @@ footer > :nth-child(3) {
 }
 
 main > :nth-child(1) > :nth-child(1) {
-  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png") no-repeat;
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png") no-repeat;
   background-size: auto;
   background-position: center;
   z-index: 2;
@@ -199,7 +208,7 @@ main > :nth-child(1) > :nth-child(2) {
 .tnw-red {
   width: 100%;
   height: 70%;
-  background: linear-gradient(#ff6f6a, #f34646);
+  background: #f42 linear-gradient(to bottom right, #c09, #f42 85%);
   opacity: 0.75;
 }
 
@@ -238,6 +247,7 @@ section {
 footer p {
   color: white;
   font-size: 0.8em;
+  margin-top: 17px;
 }
 
 .tnw-down p {
@@ -251,7 +261,7 @@ footer p {
 }
 
 .tnw-container {
-  background-image: linear-gradient(to bottom right, red, black);
+  background: #f42 linear-gradient(to bottom right, #c09, #f42 85%);
   margin-bottom: 0;
   height: 35%;
 }
@@ -404,6 +414,8 @@ main > :nth-child(2) > h2 {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  padding-left: 17%;
+  padding-right: 17%;
 }
 
 .non-flex-section2 {
@@ -412,10 +424,6 @@ main > :nth-child(2) > h2 {
 
 .small-background-img ul {
   padding-left: 14px;
-}
-
-.footer-list li {
-  list-style: none;
 }
 
 .small-background-img ul li {
@@ -580,6 +588,8 @@ footer {
 
   .flex-div2 {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .small-background-img {
@@ -659,7 +669,7 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   nav {
     background-image: url(./logo.png);
-    background-size: 20% 100px;
+    background-size: 14% 100px;
     background-position: left;
     background-repeat: no-repeat;
     background-position-y: top;
@@ -667,8 +677,12 @@ footer {
 
   nav > :nth-child(1),
   nav > :nth-child(2) {
-    margin-left: 20%;
-    width: fit-content;
+    margin-left: 14%;
+  }
+
+  .flex-div2 {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .flex-div2 .small-background-img {
@@ -687,6 +701,19 @@ footer {
 
   .tnw-img {
     display: none;
+  }
+
+  ul {
+    font-size: 0.6em;
+  }
+
+  ul li a {
+    margin-left: 5px;
+  }
+
+  .flex-container p,
+  .flex-container a {
+    font-size: 0.5em;
   }
 }
 
