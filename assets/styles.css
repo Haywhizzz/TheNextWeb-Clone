@@ -20,6 +20,7 @@ nav {
 .first-section {
   margin-top: 150px;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .flex-ul-container-two {
@@ -76,6 +77,12 @@ li > a {
   text-decoration: none;
 }
 
+footer img {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
 .footer-end img {
   width: 50px;
   height: 50px;
@@ -91,6 +98,11 @@ li > a {
 .second-headings a {
   text-decoration: none;
   color: red;
+}
+
+.grid-img a {
+  font-size: 0.8em;
+  color: #aaa;
 }
 
 nav > :nth-child(3) a {
@@ -220,10 +232,6 @@ main > :nth-child(1) > :nth-child(2) {
   justify-content: flex-end;
 }
 
-.first-section {
-  display: flex;
-}
-
 .third-background-img {
   background-image: url("./third-background-img.jpg");
   height: 49%;
@@ -290,7 +298,6 @@ footer p {
 
 .second-headings {
   display: flex;
-  color: red;
   grid-column-start: 1;
   grid-column-end: 5;
   color: red;
@@ -298,20 +305,9 @@ footer p {
   margin-top: 25px;
 }
 
-footer img {
-  height: 50px;
-  width: 50px;
-  margin-right: 15px;
-}
-
 .grid-img img {
   width: 100%;
   height: 100%;
-}
-
-.grid-img  a {
-  font-size: 0.8em;
-  color: #aaa;
 }
 
 .grid-img p {
@@ -333,8 +329,6 @@ footer img {
   color: white;
   text-decoration: none;
 }
-
-
 
 .second-headings h1 {
   margin-right: 15px;
@@ -408,7 +402,6 @@ footer img {
 
 .flex h3 {
   font-size: 0.9em;
-  
 }
 
 .second-flex-div {
@@ -761,5 +754,3 @@ footer {
     display: none;
   }
 }
-
-
