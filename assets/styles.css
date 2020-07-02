@@ -23,6 +23,10 @@ nav {
   display: flex;
 }
 
+.tnw-insights {
+  z-index: 70;
+}
+
 .flex-ul-container-two {
   color: #aaa;
   display: inline-block;
@@ -183,14 +187,15 @@ footer > :nth-child(3) {
   color: white;
   z-index: 1;
   opacity: 0.6;
+  padding-left: 10px;
 }
 
 main > :nth-child(1) > :nth-child(1) {
-  background: transparent url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png") no-repeat;
-  background-size: auto;
-  background-position: center;
-  z-index: 2;
-  height: 35em;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/06/Untitled-design-79-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 37em;
   margin: 10px 10px;
   box-sizing: border-box;
   flex: 2;
@@ -203,9 +208,21 @@ main > :nth-child(1) > :nth-child(2) {
   flex: 1;
 }
 
+.article-background {
+  background-image: linear-gradient(to right bottom, rgba(248, 28, 76, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-size: auto;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
 .tnw-img {
-  background-image: url("./logo.png");
-  height: 10rem;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg");
+  margin-left: 10px;
+  height: 7rem;
+  width: 15rem;
   opacity: 0.4;
   z-index: -1;
   background-repeat: no-repeat;
@@ -217,7 +234,6 @@ main > :nth-child(1) > :nth-child(2) {
 .tnw-red {
   width: 100%;
   height: 70%;
-  background: #f42 linear-gradient(to bottom right, #c09, #f42 85%);
   opacity: 0.75;
 }
 
@@ -257,6 +273,7 @@ footer p {
 
 .tnw-down p {
   color: white;
+  opacity: 1;
 }
 
 .tnw-down i {
@@ -266,7 +283,6 @@ footer p {
 }
 
 .tnw-container {
-  background: #f42 linear-gradient(to bottom right, #c09, #f42 85%);
   margin-bottom: 0;
   height: 35%;
 }
@@ -423,7 +439,11 @@ footer p {
 }
 
 .small-background-img p {
-  margin-top: 25px;
+  display: block;
+  margin-block-start: 5px;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 .flex-div2 {
@@ -490,9 +510,13 @@ footer {
 }
 
 .fas {
-  padding-top: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  color: white;
+}
+
+.fab {
+  color: white;
 }
 
 .footer-list ul {
