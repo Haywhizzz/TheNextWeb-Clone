@@ -577,10 +577,6 @@ footer {
     visibility: hidden;
   }
 
-  main > :nth-child(1) > :nth-child(1) {
-    height: 100%;
-  }
-
   nav :nth-child(3) {
     height: 35px;
   }
@@ -588,6 +584,10 @@ footer {
   nav :nth-child(2) {
     position: absolute;
     display: none;
+  }
+
+  main > :nth-child(1) > :nth-child(1) {
+    height: 100%;
   }
 
   .hamburger {
