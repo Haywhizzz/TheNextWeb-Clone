@@ -586,10 +586,6 @@ footer {
     display: none;
   }
 
-  main > :nth-child(1) > :nth-child(1) {
-    height: 350px;
-  }
-
   .hamburger {
     display: block;
   }
