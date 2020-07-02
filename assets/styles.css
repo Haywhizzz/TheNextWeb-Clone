@@ -62,11 +62,6 @@ li > a {
   margin-left: 20px;
 }
 
-.flex-container a {
-  margin-left: 10px;
-  color: red;
-}
-
 .tnw-insights a {
   font-size: 1em;
   color: white;
@@ -528,6 +523,10 @@ footer {
   display: none;
 }
 
+.last-grid-img h2 {
+  color: black;
+}
+
 @media screen and (max-width: 767px) {
   nav {
     background-image: url(./logo.png);
@@ -584,8 +583,9 @@ footer {
 
   .flex-div2 {
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 100%;
+    margin: 0;
+    display: block;
   }
 
   .small-background-img {
