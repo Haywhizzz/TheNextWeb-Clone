@@ -521,7 +521,9 @@ footer {
 }
 
 .fa-clock,
-.fa-share-alt {
+.fa-share-alt,
+.fa-rss,
+.fa-envelope {
   color: white;
 }
 
