@@ -647,6 +647,14 @@ footer {
     padding-top: 0;
   }
 
+  .second-flex-div {
+    margin-bottom: 10px;
+  }
+
+  .second-flex-div i {
+    margin-top: 0;
+  }
+
   .tnw-down i {
     padding-top: 0;
   }
