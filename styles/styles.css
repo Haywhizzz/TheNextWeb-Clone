@@ -181,7 +181,7 @@ footer > :nth-child(3) {
 }
 
 .small-background-img > :nth-child(1) {
-  background-image: url("./TikTok-Court-796x417.jpg");
+  background-image: url("../assets/TikTok-Court-796x417.jpg");
   background-position: center;
   background-position-y: 30px;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@ main > :nth-child(1) > :nth-child(2) {
 }
 
 .second-background-img {
-  background-image: url("./gradient-img.jpg");
+  background-image: url("../assets/gradient-img.jpg");
   height: 49%;
   opacity: 1;
   z-index: 2;
@@ -251,7 +251,7 @@ main > :nth-child(1) > :nth-child(2) {
 }
 
 .third-background-img {
-  background-image: url("./third-background-img.jpg");
+  background-image: url("../assets/third-background-img.jpg");
   height: 49%;
   opacity: 1;
   z-index: 2;
@@ -507,10 +507,7 @@ footer {
 .fa-clock,
 .fa-share-alt,
 .fa-rss,
-.fa-envelope {
-  color: white;
-}
-
+.fa-envelope,
 .fab {
   color: white;
 }
